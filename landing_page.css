@@ -39,7 +39,7 @@
   color: var(--basesilver, #E2DEDC);
 }
 .landing-page .frame-1 {
-  margin: 20.5px 0;
+  margin-top: 20.5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,8 +58,9 @@
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
   padding: 14px 20px 15px 20px;
+  margin-top: 8px;
   width: 227px;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 .landing-page .frame-4 {
   display: flex;
@@ -70,7 +71,7 @@
   box-sizing: border-box;
 }
 .landing-page .header {
-  box-shadow: 0px 4px 10px 0px #0E1947;
+  box-shadow: 0px 4px 30px 0px #0E1947;
   background: var(--mainblue, #0E1947);
   position: fixed;
   display: flex;
@@ -122,7 +123,14 @@
   box-sizing: border-box;
   z-index: 10;
 }
-
+.landing-page .collaborate2 {
+  border-radius: 8px;
+  background: var(--subblue-gray, #647EA0);
+  padding: 14px 20px 15px 20px;
+  box-sizing: border-box;
+  z-index: 10;
+  margin-right: 20px;
+}
 .landing-page .frame-5 {
   margin-bottom: 69px;
   display: flex;
@@ -376,7 +384,7 @@
 .landing-page .hero {
   background: var(--mainblue, #0E1947);
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
   display: flex;
   flex-direction: column;
   padding: 160px 100px 70px 120px;
@@ -552,6 +560,7 @@
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
+  margin: 20px 16px 0px 0px;
 }
 .landing-page .process {
   margin: 0 16px 63px 131.1px;
@@ -799,9 +808,15 @@
 .landing-page .about {
   background: var(--mainblue, #0E1947);
   display: flex;
+  flex-direction: column;
+  padding: 40px 78px 170px 120px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.landing-page .about_det {
+  display: flex;
   flex-direction: row;
-  padding: 40px 78px 84px 120px;
-  width: 1441px;
+  align-items: center;
   box-sizing: border-box;
 }
 .landing-page .our-vision-for-better-result-for-your-success {
@@ -948,7 +963,6 @@
   margin: 0 60px 111px 120px;
   display: flex;
   flex-direction: row;
-  width: fit-content;
   box-sizing: border-box;
 }
 .landing-page .ellipse-669 {
@@ -1550,6 +1564,7 @@
   background: var(--mainblue-gray, #647EA0);
   width: 6px;
   height: 6px;
+
 }
 .landing-page .frame-87 {
   margin-bottom: 20px;
@@ -2787,7 +2802,7 @@
   color: var(--basewhite, #FFFFFF);
 }
 .landing-page .meet-the-driving-forces-behind-quigley-miron-the-key-players-whose-dedication-and-expertise-fuel-our-success-and-innovation-every-day {
-  position: absolute;
+
   left: 0px;
   bottom: 0px;
   overflow-wrap: break-word;
@@ -2796,6 +2811,7 @@
   font-size: 18px;
   line-height: 1.667;
   color: var(--basesilver, #E2DEDC);
+  margin-top: 10px;
 }
 .landing-page .frame-421 {
   position: relative;
@@ -3617,6 +3633,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  margin-bottom: 42px;
 }
 .landing-page .collaborate-with-us-2 {
   overflow-wrap: break-word;
@@ -3631,14 +3648,6 @@
   margin: 54px 0;
   padding: 14px 20px 15px 20px;
   width: 207px;
-  box-sizing: border-box;
-}
-.landing-page .frame-431 {
-  margin: 0 90px 30px 118px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1200px;
   box-sizing: border-box;
 }
 .landing-page .group-13 {
@@ -4569,7 +4578,7 @@
   box-sizing: border-box;
 }
 .landing-page .frame-441 {
-  margin: 0 91.2px;
+  margin-left: 17px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4591,11 +4600,19 @@
   height: 58px;
 }
 .landing-page .value {
-  margin: 0 30px 50px 2px;
+  padding: 40px 78px 100px 120px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: fit-content;
+  align-items: center;
+  box-sizing: border-box;
+}
+.landing-page .office {
+  background: var(--mainblue, #0E1947);
+  margin: 34px 0 67px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 3px 42px 9px;
   box-sizing: border-box;
 }
 .landing-page .frame-4811 {
@@ -4652,12 +4669,12 @@
   color: var(--basesilver, #E2DEDC);
 }
 .landing-page .frame-195 {
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
+  padding: 32px 27px 32px 40px;
 }
 .landing-page .ellipse-439 {
   border-radius: 0.7px;
@@ -5028,11 +5045,13 @@
 }
 .landing-page .frame-1991 {
   border-radius: 24px;
-  background: var(--basewhite, #FFFFFF);
+  background: var(--mainblue-gray, #647EA0);
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 528px;
   height: 432px;
+  margin: 10px;
   box-sizing: border-box;
 }
 .landing-page .screenshot-11 {
@@ -5380,9 +5399,7 @@
   border-radius: 100px;
   background: var(--basewhite, #FFFFFF);
   position: relative;
-  margin-right: 10px;
   display: flex;
-  padding: 15px 0;
   width: 60px;
   height: 60px;
   box-sizing: border-box;
@@ -5392,9 +5409,9 @@
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: 'Mona Sans', 'Roboto Condensed';
+  font-family: 'Open Sans', 'Roboto Condensed';
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--basewhite, #FFFFFF);
 }
 .landing-page .container-8 {
@@ -5405,9 +5422,21 @@
   font-size: 14px;
   color: var(--basesilver, #E2DEDC);
 }
+.vector123{
+  margin: 15px 0 1px 10px;
+  width: 40px;
+  height: 30px;
+}
+.vector124{
+  margin: 10px 0 1px 10px;
+  width: 40px;
+  height: 40px;
+}
 .landing-page .frame-2615 {
   backdrop-filter: blur(2px);
   margin: 4.5px 0;
+  margin-left: 12px;
+  margin-right: 72px;
   display: flex;
   flex-direction: column;
   width: 124px;
@@ -5424,6 +5453,7 @@
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
+  padding: 0px 27px 0px 40px;
 }
 .landing-page .frame-2610 {
   background: var(--mainblue-gray, #647EA0);
@@ -5444,9 +5474,10 @@
 }
 .landing-page .frame-199 {
   position: relative;
-  width: 1110px;
-  height: 432px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
 }
 .landing-page .frame-383 {
   margin: 0 0 65px 30px;
@@ -5455,6 +5486,10 @@
   align-self: center;
   width: fit-content;
   box-sizing: border-box;
+}
+.landing-page .frame-3831 {
+  display: flex;
+  flex-direction: row;
 }
 .landing-page .ellipse-231 {
   border-radius: 3px;
@@ -5649,20 +5684,12 @@
   width: 214px;
   box-sizing: border-box;
 }
-.landing-page .office {
-  background: var(--mainblue, #0E1947);
-  margin: 0 2px 67px 0;
-  display: flex;
-  flex-direction: column;
-  padding: 42px 3px 42px 9px;
-  
-  box-sizing: border-box;
-}
 .landing-page .h-5 {
   margin: 0 8.9px;
   align-self: flex-start;
+  font-weight: bold;
   overflow-wrap: break-word;
-  font-family: var(--h-5-font-family, 'Montserrat');
+  font-family:   font-family: 'Open Sans', 'Roboto Condensed';
   font-weight: var(--h-5-font-weight, 700);
   font-size: var(--h-5-font-size, 16px);
   letter-spacing: var(--h-5-letter-spacing, 0.1px);
@@ -5671,8 +5698,9 @@
 }
 .landing-page .h-2 {
   overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Montserrat');
+  font-family:   font-family: 'Open Sans', 'Roboto Condensed';
   font-weight: var(--h-2-font-weight, 700);
+  font-weight: bold;
   font-size: var(--h-2-font-size, 40px);
   letter-spacing: var(--h-2-letter-spacing, 0.2px);
   line-height: var(--h-2-line-height, 1.425);
@@ -5758,9 +5786,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: fit-content;
   padding: 10px 19px 14px 17px;
   width: 285px;
-  height: fit-content;
   box-sizing: border-box;
 }
 .landing-page .form-group-custom-select {
@@ -5818,13 +5846,13 @@
   letter-spacing: var(--h-6-letter-spacing, 0.2px);
   line-height: var(--h-6-line-height, 1.714);
   color: var(--muted-color, #BDBDBD);
+
 }
 .landing-page .form-control-textarea-input-style-1 {
   border-radius: 5px;
   border: 1px solid var(--muted-color, #BDBDBD);
   background: #FFFFFF;
-  padding: 15px 25px 99px 25px;
-  width: fit-content;
+  padding: 15px 25px 99px 17px;
   box-sizing: border-box;
 }
 .landing-page .card-content {
@@ -6346,15 +6374,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 298.8px;
+  width: 60px;
   height: fit-content;
   box-sizing: border-box;
+  color: var(--basewhite, #FFFFFF);
 }
 .landing-page .frame-320 {
-  margin-top: 46px;
+  margin-top: 6px;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  margin-left: 400px;
 }
 .landing-page .frame-321 {
   margin-bottom: 60px;
@@ -6417,13 +6447,13 @@
 .landing-page .frame-323 {
   margin: 0 12.5px 60px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 1187.5px;
   box-sizing: border-box;
 }
 .landing-page .rectangle-35 {
   background: var(--mainblue-gray, #647EA0);
-  width: 1200px;
+  width: 1300px;
   height: 1px;
 }
 .landing-page .frame-324 {
@@ -6446,12 +6476,12 @@
   box-sizing: border-box;
 }
 .landing-page .quigley-miron-all-rights-reserved {
-  margin-top: 43px;
+  margin-top: 73px;
   display: inline-block;
   overflow-wrap: break-word;
   font-family: 'Open Sans';
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   color: var(--subsilversub, #9CA2A5);
 }
 .landing-page .frame-325 {
@@ -6467,6 +6497,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  padding: 40px;
 }
 .landing-page .airfocus-v-89-zhr-0-ibfy-unsplash-1 {
   background: url('../assets/images/airfocus_v_89_zhr_0_ibfy_unsplash_1.jpeg') 50% / cover no-repeat;
@@ -6477,14 +6508,24 @@
 .landing-page .contact-1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 2927px;
+  align-items: center;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 .landing-page {
   background: #F5F7FF;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+
+}
+.image-container {
+    text-align: right; /* Aligns the image to the right within the container */
+}
+
+.styled-image {
+    width: 100%; /* Adjust the size as needed, e.g., 50% of the container's width */
+    max-width: 450px; /* Set a maximum width to prevent it from becoming too large */
+    height: auto; /* Maintain the aspect ratio */
 
 }
