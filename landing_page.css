@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
 .landing-page .qmlogo-351 {
   background: url('../assets/images/qmlogo_351.png') 50% / cover no-repeat;
   width: 369px;
@@ -9,6 +12,10 @@
   font-weight: 400;
   font-size: 18px;
   color: var(--basesilver, #E2DEDC);
+}
+.landing-page .home-1 a {
+    color: var(--basesilver, #E2DEDC);
+    text-decoration: none;
 }
 .landing-page .about-2 {
   overflow-wrap: break-word;
@@ -54,30 +61,35 @@
   font-size: 18px;
   color: var(--basewhite, #FFFFFF);
 }
+.landing-page .book-an-appointment-1 a {
+  color: var(--basewhite, #FFFFFF);
+  text-decoration: none;
+}
 .landing-page .frame-23 {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
   padding: 14px 20px 15px 20px;
   margin-top: 8px;
-  width: 227px;
-  box-sizing: border-box
+  margin-left:30px;
+  box-sizing: border-box;
 }
 .landing-page .frame-4 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 703px;
   height: fit-content;
   box-sizing: border-box;
+  justify-content: flex-end;
 }
 .landing-page .header {
   box-shadow: 0px 4px 30px 0px #0E1947;
   background: var(--mainblue, #0E1947);
   position: fixed;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 19px 128px 1px 36px;
+   align-items: center;
+  padding: 19px 40px 1px 36px;
   box-sizing: border-box;
   width: 100%;
   z-index: 10;
@@ -147,6 +159,11 @@
   font-size: 18px;
   color: var(--basewhite, #FFFFFF);
 }
+.landing-page .collaborate-with-us a{
+  text-decoration: none;
+  color: var(--basewhite, #FFFFFF);
+}
+text-decoration: none;
 .landing-page .frame-2 {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
@@ -171,6 +188,10 @@
   font-size: 18px;
   color: var(--basewhite, #FFFFFF);
   z-index: 10
+}
+.landing-page .learn-more a {
+    text-decoration: none;
+    color: var(--basewhite, #FFFFFF);
 }
 .landing-page .frame-6 {
   border-radius: 8px;
@@ -203,12 +224,6 @@
   margin-top: 55px;
   z-index: 10;
 }
-
-
-
-
-
-
 .landing-page .frame-23 {
   position: relative;
   margin-bottom: 34px;
@@ -411,6 +426,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1.333;
+  margin-right: 460px;
   color: var(--baseblack, #100F1B);
 }
 .landing-page .frame-71 {
@@ -568,6 +584,7 @@
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
+  align-items: center;
 }
 .landing-page .know-our-story {
   overflow-wrap: break-word;
@@ -809,7 +826,7 @@
   background: var(--mainblue, #0E1947);
   display: flex;
   flex-direction: column;
-  padding: 40px 78px 170px 120px;
+  padding: 40px 78px 80px 120px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -4646,8 +4663,18 @@
 }
 .landing-page .screenshot-61 {
   background: url('../assets/images/screenshot_61.png') 50% / cover no-repeat;
+
   width: 528px;
-  height: 207px;
+  height: 182px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.landing-page .screenshot-62 {
+  background: url('../assets/images/screenshot_11.png') 50% / cover no-repeat;
+  width: 528px;
+  height: 182px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 .landing-page .los-angeles-office {
   margin-bottom: 4px;
@@ -4660,12 +4687,20 @@
   line-height: 1.455;
   color: var(--basewhite, #FFFFFF);
 }
+.landing-page .los-angeles-office a{
+  text-decoration: none;
+  color: var(--basewhite, #FFFFFF);
+}
 .landing-page .wilshire-boulevard-suite-1660-los-angeles-ca-90010 {
   overflow-wrap: break-word;
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
+  color: var(--basesilver, #E2DEDC);
+}
+.landing-page .wilshire-boulevard-suite-1660-los-angeles-ca-90010 a{
+  text-decoration: none;
   color: var(--basesilver, #E2DEDC);
 }
 .landing-page .frame-195 {
@@ -4848,6 +4883,10 @@
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 14px;
+  color: var(--basesilver, #E2DEDC);
+}
+.landing-page .infoquigleyandmiron-com {
+
   color: var(--basesilver, #E2DEDC);
 }
 .landing-page .frame-268 {
@@ -5420,6 +5459,10 @@
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 14px;
+  color: var(--basesilver, #E2DEDC);
+}
+.landing-page .container-8 a {
+  text-decoration: none;
   color: var(--basesilver, #E2DEDC);
 }
 .vector123{
@@ -6400,7 +6443,7 @@
   overflow-wrap: break-word;
   font-family: 'Open Sans';
   font-weight: 400;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.455;
   color: var(--basewhite, #FFFFFF);
 }
@@ -6525,7 +6568,6 @@
 
 .styled-image {
     width: 100%; /* Adjust the size as needed, e.g., 50% of the container's width */
-    max-width: 450px; /* Set a maximum width to prevent it from becoming too large */
+    max-width: 400px; /* Set a maximum width to prevent it from becoming too large */
     height: auto; /* Maintain the aspect ratio */
-
 }
