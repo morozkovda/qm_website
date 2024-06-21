@@ -16,6 +16,24 @@ html {
 .landing-page .home-1 a {
     color: var(--basesilver, #E2DEDC);
     text-decoration: none;
+    display: inline-block; /* Ensure the element size is only as large as the content */
+    cursor: pointer;
+}
+.landing-page .home-1 a {
+    color: var(--basesilver, #E2DEDC);
+    text-decoration: none;
+    display: inline-block; /* Ensure the element size is only as large as the content */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: border-color 0.3s ease;
+}
+.landing-page .home-1 a:hover {
+    color: #cbcbcb;
+    text-decoration: none;
+    display: inline-block; /* Ensure the element size is only as large as the content */
+    cursor: pointer;
+    border-bottom-color: #cbcbcb;
 }
 .landing-page .about-2 {
   overflow-wrap: break-word;
@@ -65,18 +83,25 @@ html {
   color: var(--basewhite, #FFFFFF);
   text-decoration: none;
 }
+.landing-page .book-an-appointment-1 a:hover{
+    color: #cbcbcb;
+}
 .landing-page .frame-23 {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
-  padding: 14px 20px 15px 20px;
+  padding: 14px 20px 14px 20px;
   margin-top: 8px;
   margin-left:30px;
-  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.landing-page .frame-23 a:hover{
+    color: #cbcbcb;
 }
 .landing-page .frame-4 {
   display: flex;
   flex-direction: row;
-  width: 703px;
+
   height: fit-content;
   box-sizing: border-box;
   justify-content: flex-end;
@@ -130,15 +155,18 @@ html {
 .landing-page .collaborate {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
-  padding: 14px 10px 15px 20px;
+  padding: 15px 20px 15px 20px;
   width: 210px;
   box-sizing: border-box;
   z-index: 10;
+}#easter-egg {
+    cursor: default; /* Ensures the cursor does not change to indicate it's clickable */
+    user-select: none; /* Prevents text selection */
 }
 .landing-page .collaborate2 {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
-  padding: 14px 20px 15px 20px;
+  padding: 15px 20px 15px 20px;
   box-sizing: border-box;
   z-index: 10;
   margin-right: 20px;
@@ -162,6 +190,9 @@ html {
 .landing-page .collaborate-with-us a{
   text-decoration: none;
   color: var(--basewhite, #FFFFFF);
+}
+.landing-page .collaborate-with-us a:hover{
+    color: #cbcbcb;
 }
 text-decoration: none;
 .landing-page .frame-2 {
@@ -193,10 +224,13 @@ text-decoration: none;
     text-decoration: none;
     color: var(--basewhite, #FFFFFF);
 }
+.landing-page .learn-more a:hover{
+    color: #cbcbcb;
+}
 .landing-page .frame-6 {
   border-radius: 8px;
   border: 1px solid var(--basewhite, #FFFFFF);
-  padding: 14px 10px 15px 20px;
+  padding: 15px 20px 15px 20px;
   width: 143px;
   box-sizing: border-box;
   z-index: 10;
@@ -426,14 +460,15 @@ text-decoration: none;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.333;
-  margin-right: 460px;
   color: var(--baseblack, #100F1B);
 }
 .landing-page .frame-71 {
   margin: 0 2.9px 27px 2.9px;
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   box-sizing: border-box;
+  justify-content: space-between;
+  gap: 460px; /* Adjust the gap value as needed */
 }
 .landing-page .frame-712 {
 width: 274px;
@@ -606,7 +641,8 @@ width: 304px;
   margin: 20px 16px 0px 0px;
 }
 .landing-page .process {
-  margin: 0 16px 63px 131.1px;
+  margin: 0 16px 63px 130px;
+
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -853,7 +889,7 @@ width: 304px;
   background: var(--mainblue, #0E1947);
   display: flex;
   flex-direction: column;
-  padding: 40px 78px 80px 120px;
+  padding: 40px 78px 80px 130px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -4650,9 +4686,32 @@ width: 304px;
   align-items: center;
   box-sizing: border-box;
 }
+.section-offset {
+    padding-top: 120px; /* Adjust based on the height of your navigation bar */
+    margin-top: -90px; /* Adjust based on the height of your navigation bar */
+}
+.section-offset1 {
+    padding-top: 80px; /* Adjust based on the height of your navigation bar */
+    margin-top: -80px; /* Adjust based on the height of your navigation bar */
+}
+.section-offset2 {
+    padding-top: 90px; /* Adjust based on the height of your navigation bar */
+    margin-top: -80px; /* Adjust based on the height of your navigation bar */
+}
+.section-offset3 {
+    padding-top: 20px; /* Adjust based on the height of your navigation bar */
+    margin-top: 20px; /* Adjust based on the height of your navigation bar */
+
+}
+body::after {
+    content: '';
+    display: block;
+    height: 10px;
+    background: #162356;
+}
 .landing-page .office {
   background: var(--mainblue, #0E1947);
-  margin: 34px 0 67px 0;
+  margin: 0px 0 67px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4718,6 +4777,9 @@ width: 304px;
   text-decoration: none;
   color: var(--basewhite, #FFFFFF);
 }
+.landing-page .los-angeles-office a:hover{
+  color:  #cbcbcb;
+}
 .landing-page .wilshire-boulevard-suite-1660-los-angeles-ca-90010 {
   overflow-wrap: break-word;
   font-family: 'Open Sans';
@@ -4729,6 +4791,9 @@ width: 304px;
 .landing-page .wilshire-boulevard-suite-1660-los-angeles-ca-90010 a{
   text-decoration: none;
   color: var(--basesilver, #E2DEDC);
+}
+.landing-page .wilshire-boulevard-suite-1660-los-angeles-ca-90010 a:hover{
+  color:  #cbcbcb;
 }
 .landing-page .frame-195 {
   display: flex;
@@ -5492,6 +5557,10 @@ width: 304px;
   text-decoration: none;
   color: var(--basesilver, #E2DEDC);
 }
+.landing-page .container-8 a:hover {
+  text-decoration: none;
+  color:  #cbcbcb;
+}
 .vector123{
   margin: 15px 0 1px 10px;
   width: 40px;
@@ -5831,6 +5900,8 @@ width: 304px;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
+  justify-content: space-between;
+  gap: 25px; /* Adjust the gap value as needed */
 }
 .landing-page .dropdown {
   margin-right: 12px;
@@ -5918,12 +5989,56 @@ width: 304px;
   color: var(--muted-color, #BDBDBD);
 
 }
-.landing-page .form-control-textarea-input-style-1 {
+textarea {
   border-radius: 5px;
   border: 1px solid var(--muted-color, #BDBDBD);
   background: #FFFFFF;
   padding: 15px 25px 99px 17px;
   box-sizing: border-box;
+    overflow-wrap: break-word;
+  font-family: var(--h-6-font-family, 'Montserrat');
+  font-weight: var(--h-6-font-weight, 600);
+  font-size: var(--h-6-font-size, 14px);
+  letter-spacing: var(--h-6-letter-spacing, 0.2px);
+  line-height: var(--h-6-line-height, 1.714);
+}
+textarea:focus {
+}
+input{
+  width: 285px;
+  box-sizing: border-box;
+    border-radius: 5px;
+  border: 1px solid var(--muted-color, #BDBDBD);
+  background: #FFFFFF;
+  padding: 10px 20px 14px 20px;
+  box-sizing: border-box;
+  font-family: var(--h-6-font-family, 'Montserrat');
+  font-weight: var(--h-6-font-weight, 600);
+  font-size: var(--h-6-font-size, 14px);
+  letter-spacing: var(--h-6-letter-spacing, 0.2px);
+  line-height: var(--h-6-line-height, 1.714);
+}
+input:focus-within {
+
+}
+button{
+  border-radius: 8px;
+  background: var(--subblue-gray, #647EA0);
+  padding: 15px 20px 15px 20px;
+  width: 210px;
+  box-sizing: border-box;
+    overflow-wrap: break-word;
+  font-family: 'Open Sans', 'Roboto Condensed';
+  font-weight: 500;
+  font-weight: 'bold';
+  font-size: 18px;
+  color: var(--basewhite, #FFFFFF);
+  z-index: 10;
+}
+button:hover{
+    opacity 80%;
+    cursor: pointer;
+    color: #cbcbcb;
 }
 .landing-page .card-content {
   margin-bottom: 40px;
@@ -6597,4 +6712,9 @@ width: 304px;
     width: 100%; /* Adjust the size as needed, e.g., 50% of the container's width */
     max-width: 400px; /* Set a maximum width to prevent it from becoming too large */
     height: auto; /* Maintain the aspect ratio */
+}
+.styled-image1 {
+    width: 100%; /* Adjust the size as needed, e.g., 50% of the container's width */
+    max-width: 400px; /* Set a maximum width to prevent it from becoming too large */
+    height: 100%;
 }
