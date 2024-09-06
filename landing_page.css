@@ -427,7 +427,7 @@ text-decoration: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1240.4px;
+  width: auto;
   box-sizing: border-box;
 }
 .landing-page .hero {
@@ -463,12 +463,13 @@ text-decoration: none;
   color: var(--baseblack, #100F1B);
 }
 .landing-page .frame-71 {
-  margin: 0 2.9px 27px 2.9px;
+  margin: 0 0px 27px 0px;
   display: flex;
-  align-self: center;
+
   box-sizing: border-box;
   justify-content: space-between;
-  gap: 460px; /* Adjust the gap value as needed */
+  padding: 20px;
+   /* Adjust the gap value as needed */
 }
 .landing-page .frame-712 {
 width: 274px;
@@ -529,11 +530,11 @@ width: 304px;
   box-sizing: border-box;
 }
 .landing-page .frame-67 {
-  margin: 0px 65.2px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  padding: 60px;
 }
 .landing-page .group-11 {
   margin-bottom: 32px;
@@ -638,16 +639,14 @@ width: 304px;
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
-  margin: 20px 16px 0px 0px;
 }
 .landing-page .process {
-  margin: 0 16px 63px 130px;
-
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
-  align-items: center;
+  padding: 0px 120px 0px 120px;
+
 }
 .landing-page .know-our-story {
   overflow-wrap: break-word;
@@ -670,11 +669,12 @@ width: 304px;
   color: var(--basesilver, #E2DEDC);
 }
 .landing-page .frame-60 {
-  position: relative;
-  margin: 60px 24.1px 46px 0;
-  width: 583.9px;
-  height: 398px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
   box-sizing: border-box;
+  padding: 65px 0 0 90px;
 }
 .landing-page .ellipse-6 {
   border-radius: 3px;
@@ -888,8 +888,8 @@ width: 304px;
 .landing-page .about {
   background: var(--mainblue, #0E1947);
   display: flex;
-  flex-direction: column;
-  padding: 40px 78px 80px 130px;
+  flex-direction: row;
+  padding: 40px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -2882,16 +2882,17 @@ width: 304px;
   color: var(--basewhite, #FFFFFF);
 }
 .landing-page .meet-the-driving-forces-behind-quigley-miron-the-key-players-whose-dedication-and-expertise-fuel-our-success-and-innovation-every-day {
-
   left: 0px;
   bottom: 0px;
   overflow-wrap: break-word;
   font-family: 'Open Sans';
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.667;
   color: var(--basesilver, #E2DEDC);
   margin-top: 10px;
+  padding: 0 20px 0 0;
+  max-width: 580px;
 }
 .landing-page .frame-421 {
   position: relative;
@@ -6718,3 +6719,75 @@ button:hover{
     max-width: 400px; /* Set a maximum width to prevent it from becoming too large */
     height: 100%;
 }
+@media only screen and (max-width: 1200px) {
+.landing-page .frame-25 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  box-sizing: border-box;
+}
+.landing-page .frame-70 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.landing-page .process {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0px 40px 0px 40px;
+}
+.landing-page .frame-71 {
+  margin: 0 0px 27px 0px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+   /* Adjust the gap value as needed */
+}
+.landing-page .our-work-is-for-your-success {
+  overflow-wrap: break-word;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.333;
+  color: var(--baseblack, #100F1B);
+  order: 2;
+}
+.styled-image1 {
+    width: 100%; /* Adjust the size as needed, e.g., 50% of the container's width */
+    max-width: 400px; /* Set a maximum width to prevent it from becoming too large */
+    height: 100%;
+    order: 1;
+    margin-bottom: 40px;
+}
+.landing-page .about {
+  background: var(--mainblue, #0E1947);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.landing-page .meet-the-driving-forces-behind-quigley-miron-the-key-players-whose-dedication-and-expertise-fuel-our-success-and-innovation-every-day {
+  left: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.667;
+  color: var(--basesilver, #E2DEDC);
+  margin-top: 10px;
+}
+
+}
+
