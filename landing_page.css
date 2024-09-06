@@ -892,6 +892,7 @@ width: 304px;
   padding: 40px;
   align-items: center;
   box-sizing: border-box;
+  justify-content: center;
 }
 .landing-page .about_det {
   display: flex;
@@ -6597,6 +6598,7 @@ button:hover{
   font-size: 22px;
   line-height: 1.455;
   color: var(--basewhite, #FFFFFF);
+
 }
 .landing-page .service {
   overflow-wrap: break-word;
