@@ -6790,6 +6790,13 @@ button:hover{
   color: var(--basesilver, #E2DEDC);
   margin-top: 10px;
 }
-
+.landing-page .frame-60 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 65px 90px 40px 90px;
+}
 }
 
