@@ -2920,8 +2920,9 @@ width: 304px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1304px;
+
   box-sizing: border-box;
+  font-size: 9px;
 }
 .landing-page .frame-366 {
   border-radius: 24px;
@@ -6785,7 +6786,7 @@ button:hover{
   overflow-wrap: break-word;
   font-family: 'Open Sans';
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.667;
   color: var(--basesilver, #E2DEDC);
   margin-top: 10px;
@@ -6798,5 +6799,128 @@ button:hover{
   box-sizing: border-box;
   padding: 65px 90px 40px 90px;
 }
+.landing-page .frame-40 {
+    margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-page .frame-41 {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-page .frame-354 {
+    margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 40px 0px;
+}
+.landing-page .frame-355 {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 40px 0px;
+}
+.landing-page .frame-715 {
+width: 304px;
+  height: 45px;
+  display: flex;
+  align-self: flex-end;
+  padding: 0 0 30px 0px;
+}
+.landing-page .value {
+  padding: 40px 90px 0px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.landing-page .frame-199 {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.landing-page .frame-1991 {
+  border-radius: 24px;
+  background: var(--mainblue-gray, #647EA0);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  height: 332px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.landing-page .screenshot-61 {
+  background: url('../assets/images/screenshot_61.png') 50% / cover no-repeat;
+  width: 428px;
+  height: 82px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.landing-page .screenshot-62 {
+  background: url('../assets/images/screenshot_11.png') 50% / cover no-repeat;
+  width: 428px;
+  height: 82px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.landing-page .frame-2615 {
+
+  margin: 4.5px 0;
+  margin-left: 12px;
+  margin-right: 72px;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  box-sizing: border-box;
+}
+.landing-page .infoquigleyandmiron-com {
+  overflow-wrap: break-word;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 3px;
+  color: var(--basesilver, #E2DEDC);
+}
+.landing-page .container-8 {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 9px;
+  color: var(--basesilver, #E2DEDC);
+}
+.landing-page .frame-2615 {
+  backdrop-filter: blur(0px);
+  margin: 4.5px 0;
+  margin-left: 12px;
+  margin-right: 72px;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  box-sizing: border-box;
+}
+.landing-page .frame-3771 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
 }
 
