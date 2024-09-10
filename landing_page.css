@@ -71,6 +71,7 @@ html {
   width: 423.7px;
   height: fit-content;
   box-sizing: border-box;
+  list-style: none;
 }
 .landing-page .book-an-appointment-1 {
   overflow-wrap: break-word;
