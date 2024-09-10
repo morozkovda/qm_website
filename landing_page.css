@@ -72,14 +72,14 @@ html {
   color: var(--basesilver, #E2DEDC);
 }
 .landing-page .frame-1 {
-  margin-top: 20.5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 423.7px;
   height: fit-content;
-  box-sizing: border-box;
+
   list-style: none;
+  margin-right: 30px;
 }
 .landing-page .book-an-appointment-1 {
   overflow-wrap: break-word;
@@ -99,8 +99,6 @@ html {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
   padding: 14px 20px 14px 20px;
-  margin-top: 8px;
-  margin-left:30px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -269,7 +267,6 @@ text-decoration: none;
 }
 .landing-page .frame-23 {
   position: relative;
-  margin-bottom: 34px;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -7011,16 +7008,6 @@ textarea {
   width: 400px;
   box-sizing: border-box;
 }
-.landing-page .frame-1 {
-  margin-top: 20.5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 423.7px;
-  height: fit-content;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-}
 .landing-page .frame-320 {
   margin-top: 6px;
   display: flex;
@@ -7125,7 +7112,7 @@ textarea {
         max-height: 0;
         overflow: hidden;  /* Hide overflow when collapsed */
         transition: max-height 0.5s ease;
-
+        margin-right: 0px;
 }
 .frame-1.active {
         max-height: 300px;
@@ -7147,8 +7134,6 @@ textarea {
   border-radius: 8px;
   background: var(--subblue-gray, #647EA0);
   padding: 14px 20px 14px 20px;
-  margin-top: 8px;
-  margin-left:30px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   display: none;
