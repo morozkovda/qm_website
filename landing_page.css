@@ -7104,13 +7104,15 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        display: none;
+
         max-height: 0;
+        overflow: hidden;  /* Hide overflow when collapsed */
         transition: max-height 0.5s ease;
+
 }
 .frame-1.active {
         max-height: 300px;
-        display: flex;
+
   }
 .menu-toggle {
         display: flex;
