@@ -6973,6 +6973,18 @@ textarea {
   width: 400px;
   box-sizing: border-box;
 }
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
 .landing-page .frame-323 {
   margin: 0 12.5px 0px 0;
   display: flex;
@@ -7081,6 +7093,35 @@ textarea {
   padding: 0px 0px 30px 0px;
   align-items: center;
   box-sizing: border-box;
+}
+.landing-page .frame-1 {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #333;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+}
+
+.frame-1.active {
+        display: flex;
+  }
+.menu-toggle {
+        display: flex;
+    }
+.landing-page .frame-23 {
+  border-radius: 8px;
+  background: var(--subblue-gray, #647EA0);
+  padding: 14px 20px 14px 20px;
+  margin-top: 8px;
+  margin-left:30px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  display: none;
 }
 }
 
